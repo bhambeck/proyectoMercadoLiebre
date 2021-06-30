@@ -23,16 +23,29 @@ header ul a {
     text-align: center;
 }
 .burger-menu{
+    text-align: center;
     background-color: #1259c3;
     color:white;
-    padding: 10px;
-    margin:0 auto;
-    width: 17px;
+    padding: 10px 10px;
+    margin: auto;
+    width: 6%;
     border: 1px solid #1259c3;
     border-radius: 5px;
     font-size: larger;
 }
 
+main{
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+main .producto{
+    padding-bottom: 10px;
+}
+main .texto-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
 
 footer section {
     text-align:center;
