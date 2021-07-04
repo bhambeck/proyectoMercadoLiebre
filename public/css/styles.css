@@ -1,50 +1,123 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
 }
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
 header {
     background-color: #EAC926;
-    padding-bottom: 10px;
 }
-header img {
-    margin: 30px;
+
+header div.logo{
+    width: 50%;
 }
-header input, header button {
-    margin-left: 30px;
+
+header nav{
+    font-size: 12px;
+    display: none;
 }
-header ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-header ul a {
+
+header ul li a{
     text-decoration: none;
-    color: black;
+    color: black
 }
+
+header .menuBuscar .input {
+    background-color: white;
+    border: 1px solid black;
+    outline:none;
+    color: #666;
+    padding: 2px;
+}
+header .menuBuscar button{
+    background-color: #FFF;
+    border: 1px solid black;
+    color: #666;
+    width:10%
+}
+
+
 #manito-cuota{
     text-align: center;
+    width: 100%;
+    margin-top: 10px;
 }
-.burger-menu{
+
+div.burger-menu{
     text-align: center;
+}
+
+div.burger-menu i{
     background-color: #1259c3;
     color:white;
-    padding: 10px 10px;
-    margin: auto;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
     width: 6%;
     border: 1px solid #1259c3;
     border-radius: 5px;
     font-size: larger;
+   
+}
+section.bannerGris img{
+    width: 100%;
 }
 
 main{
     text-align: center;
-    width: 90vw;
+    width:90%;
     margin: 0 auto;
 }
-main .producto{
-    padding-bottom: 10px;
+main .productos{
+    margin: 10px;
 }
+main article img{
+    width: 100%;
+}
+main .precios{
+    font-size: 18px;
+}
+
 main .texto-producto {
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    width: 100%;
+}
+.descuentos, .descripcion-producto{
+font-size: 16px;
+font-weight: normal;
+}
+
+h3,
+.descripcion-producto{
+    color: #666;
+}
+
+main section article{
+    background-color: white;
+}
+main section article i, .descuentos{
+color: #39b54a;
+}
+.circle-env{
+        height: 50px;
+        width: 50px;
+        border: 1px solid green;
+        border-radius: 50%;
+        color: green;
+    }
+.circle-env::before{
+    line-height: 50px;
 }
 
 footer section {
@@ -66,4 +139,23 @@ footer section p{
 }
 .Copyright{
     text-align: left;
+}
+
+@media (min-width:361px){
+    article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+    
+}
+@media (min-width:769px){
+   header nav{
+       display:block;
+   }
+   div.burger-menu{
+       display: none;
+   }
+   article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+   }
 }
