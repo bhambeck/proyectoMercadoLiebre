@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color:#ebebeb;
@@ -11,64 +15,83 @@ p{
     font-size: 12px;
 }
 
+.logo{
+    width: 200px;
+}
+
 div.top-header{
-    padding: 5%;
+    padding: 2%;
+
 }
 
 header {
     background-color: #EAC926;
+    padding: 10px;
 }
 
-header div.logo{
+.logo{
     width: 50%;
+    margin: auto;
+}
+#manito-cuota{
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.compra-cuotas{
+    margin:  auto;
+    text-align: center;
+    font-size: smaller;
 }
 
-header nav{
-    font-size: 12px;
-    display: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: black
-}
-
-header .menuBuscar .input {
+.menu-buscar .input {
     background-color: white;
     border: 1px solid black;
     outline:none;
     color: #666;
     padding: 2px;
 }
-header .menuBuscar button{
+.menu-buscar button{
     background-color: #FFF;
     border: 1px solid black;
     color: #666;
     width:10%
 }
-
-
-#manito-cuota{
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
+.menu-buscar{
+    display:none
 }
 
-div.burger-menu{
-    text-align: center;
+
+header nav{
+    display: none;
 }
 
-div.burger-menu i{
+header ul li {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+header ul li a{
+    text-decoration: none;
+    color: #222222;
+    display:inline-block;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.burger-menu {
     background-color: #1259c3;
     color:white;
-    padding: 10px;
-    margin: 10px 0px 20px 0px;
-    width: 6%;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
     border: 1px solid #1259c3;
     border-radius: 5px;
     font-size: larger;
-   
+    text-align: center;
+    margin:auto;
 }
+
 section.bannerGris img{
     width: 100%;
 }
@@ -144,8 +167,34 @@ footer section p{
 @media (min-width:361px){
     article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }   
 }
-    
+@media (min-width:768px){
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-cuotas{
+        max-width: 350px;
+        text-align: right;
+        margin: 0;
+    }
+     .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    .logo{
+        width: 200px;
+    }
 }
 @media (min-width:769px){
    header nav{
@@ -156,6 +205,36 @@ footer section p{
    }
    article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-   
    }
+  
+}
+@media (min-width: 1200px){
+    .logo{
+        width: 300px;
+        margin:0;
+    }
+
+    .top-header, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .top-header{
+        align-items: center;
+    }
+
+    .main-navbar{
+        margin-top: 50px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .compra-cuotas{
+        max-width: none;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    
 }

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/6642662c1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel= "stylesheet" href="/css/styles.css">
 </head>
@@ -18,30 +19,33 @@
     <header>
         <div class="top-header">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" width= "200" alt='Logo ML'>
+                <img src="/images/logo-mercado-liebre.svg"  alt='Logo ML'>
             </div>
-            <div class ="menuBuscar">
+            <div class="compra-cuotas">
+                <h2 id="manito-cuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>      
+            </div>
+            <div class ="menu-buscar">
                 <input type="search" name= "búsqueda" size="25" placeholder="Buscar productos, marcas"><br/>
                 <button><i class="fas fa-search"></i></button>
             </div>
-                <p id="manito-cuota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>      
         </div>
-        <nav>
-            <ul>
+            </div>
+        <nav class= "main-navbar">
+            <ul class= "left-navbar">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul>
+            <ul class="right-navbar">
                 <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
                 <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
-        <div class="burger-menu"> 
+        <a href= "#" class="burger-menu"> 
             <i class="fas fa-bars"></i>
-        </div>  
+        </a>  
     </header> 
     <section class="bannerGris">
         <img src="/images/img-home-banner.jpg"alt='Banner Ofertas'>
