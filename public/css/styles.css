@@ -14,25 +14,26 @@ h3{
 p{
     font-size: 12px;
 }
+/**HEADER*/
 
 .logo{
-    width: 200px;
+    width: 50%;
+    padding: 10px;
+    margin:auto;
 }
 
 div.top-header{
     padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 header {
     background-color: #EAC926;
-    padding: 10px;
+    padding: 5px;
 }
 
-.logo{
-    width: 50%;
-    margin: auto;
-}
 #manito-cuota{
     width: 100%;
     margin-top: 10px;
@@ -49,7 +50,7 @@ header {
     border: 1px solid black;
     outline:none;
     color: #666;
-    padding: 2px;
+    padding: 3px;
 }
 .menu-buscar button{
     background-color: #FFF;
@@ -63,6 +64,7 @@ header {
 
 
 header nav{
+    font-size: 12px;
     display: none;
 }
 
@@ -92,9 +94,15 @@ header ul li a{
     margin:auto;
 }
 
+/**HEADER*/
+
+/**BANNER GRIS*/
 section.bannerGris img{
     width: 100%;
 }
+/**BANNER GRIS*/
+
+/**MAIN*/
 
 main{
     text-align: center;
@@ -125,14 +133,33 @@ h3,
 .descripcion-producto{
     color: #666;
 }
+.descripcion-producto{
+    display:none;
+}
 
 main section article{
     background-color: white;
+    margin-top: 20px;
 }
-main section article i, .descuentos{
+.descuentos{
 color: #39b54a;
 }
-.circle-env{
+
+main section article i{
+    display:block;
+    font-size: 16px;
+    padding: 5px;
+    width:30px;
+    height: 30px;
+    border:1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right:20px;
+    top:-15px;
+    color: #39b54a;
+}
+/**.circle-env{
         height: 50px;
         width: 50px;
         border: 1px solid green;
@@ -141,8 +168,27 @@ color: #39b54a;
     }
 .circle-env::before{
     line-height: 50px;
+}*/
+
+article div.texto-producto{
+    width:100%;
+    border-top: 1px solid #ebebeb;
+    padding:15px;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+article div.texto-producto .precios{
+    width:30%;
+}
+article div.texto-producto .descuentos{
+    width: 70%;
 }
 
+/**MAIN*/
+
+/**FOOTER*/
 footer section {
     text-align:center;
     padding: 20px;
@@ -163,10 +209,24 @@ footer section p{
 .Copyright{
     text-align: left;
 }
+/**FOOTER*/
+
+/**MEDIAS*/
 
 @media (min-width:361px){
-    article {
+    main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    width:45%;
+    }
+
+    main section div.productos{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main section .descripcion-producto{
+        display:block;
+    
     }   
 }
 @media (min-width:768px){
@@ -205,6 +265,9 @@ footer section p{
    }
    article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+   main section article{
+       width:22%;
    }
   
 }
