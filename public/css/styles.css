@@ -43,13 +43,19 @@ header {
     text-align: center;
     font-size: smaller;
 }
+.menu-buscar{
+    width: 100%;
+}
 
-.menu-buscar .input {
-    background-color: white;
-    border: 1px solid black;
+.menu-buscar input {
     outline:none;
     color: #666;
     padding: 3px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 20px;
 }
 .menu-buscar button{
     background-color: #FFF;
@@ -57,8 +63,22 @@ header {
     color: #666;
     width:10%
 }
-.menu-buscar{
-    display:none
+.menu-buscar form{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.fa-search{
+    padding: 0 auto;
+    font-size: smaller; 
+}
+.menu-buscar button{
+    width: fit-content;
+    border-color: #FFF;
+    border-radius: 5px;
+    position:absolute;
+    right: 1px;
+    top: 3px;
 }
 
 
@@ -289,6 +309,9 @@ footer section p{
    }
   .burger-menu{
        display: none;
+   }
+   .menu-buscar{
+       width: 50%;
    }
   
    main section article{
