@@ -218,6 +218,19 @@ h4.sinmargen {
     text-align: left;
     margin:5px;
 }
+.submit{
+    margin-top: 20px;
+    background-color: #1259c3;
+    color:#ebebeb;
+    border-radius: 5px;
+    width:30%;
+    padding:10px;
+
+
+}
+.submit:hover{
+background-color:#0022AA
+}
 /**FORMULARIOS*/
 
 /**FOOTER*/
@@ -226,7 +239,7 @@ footer section{
 }
 footer div {
     text-align:center;
-    padding: 20px 40px;
+    padding: 20px 35px;
     color:#666;  
 }
 footer section h3{
@@ -241,6 +254,9 @@ footer section p{
     color:#1259c3;
     font-size: 2em;
     padding-bottom: 5px;
+}
+.icono-footer:hover{
+    color:#EAC926
 }
 .Copyright{
     text-align: left;
@@ -332,6 +348,9 @@ footer section p{
         max-width: none;
         font-size: 17px;
         font-weight: 400;
+    }
+    footer section{
+        display:flex;
     }
     
 }
