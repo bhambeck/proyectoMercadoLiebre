@@ -197,6 +197,20 @@ article div.texto-producto .descuentos{
     width: 70%;
 
 }
+main section article:hover .descripcion-producto {
+    display: block;
+    position: absolute;
+    top: -150%;
+    background-color: black;
+    padding: 20px;
+    border: 1px solid grey;
+    left: 0px;
+    margin: 10px;
+    color: white;
+    opacity: .7;
+    width: 90%;
+    
+}
 
 /**MAIN*/
 
@@ -296,10 +310,7 @@ footer section p{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    main section .descripcion-producto{
-        display:block;
     
-    }  
     
 }
 
@@ -324,33 +335,33 @@ footer section p{
    .logo{
     width: 300px;
     margin: 20px 10px;
-}
-.top-header{
-    display: flex;
-    justify-content: space-between;
-}
-.compra-cuotas{
-    max-width: 350px;
-    text-align: right;
-    padding-top: 20px;
-}
+    }
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-cuotas{
+        max-width: 350px;
+        text-align: right;
+        padding-top: 20px;
+    }
 
-.main-navbar{
-    display:flex;
-    justify-content: space-between;
-}
-.main-navbar ul{
-    display:flex;
-}
-.main-navbar li{
-    margin: 0 5px;
-}
-main section article .descripcion-producto{
-    display: none;
-}
-main section article:hover .descripcion-producto{
-    display:block;
-}
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    main section article .descripcion-producto{
+        display: none;
+    }
+    main section article:hover .descripcion-producto{
+        display:block;
+    }
   
 }
 @media (min-width: 1200px){
